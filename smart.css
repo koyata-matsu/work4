@@ -1,0 +1,420 @@
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    background-color: #1C1C1C;
+    height: 100px;
+    border-bottom: 2px solid #707070;
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 30px;
+    font-family: 'SAO UI';
+  }
+  header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header div h1 {
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  header div h1 a {
+    line-height: 1;
+    font-size: 3.7rem;
+  }
+  header div ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 10px;
+  }
+  header div ul li a img {
+    margin-right: 15px;
+    width: 20px;
+  }
+  header .menu {
+    display: none;
+  }
+  header .hamburger-menu {
+    display: block;
+  }
+  header .hamburger-menu #menu-btn-check {
+    display: none;
+  }
+  header .hamburger-menu #menu-btn-check:checked ~ .menu-content {
+    left: 0;
+  }
+  header .hamburger-menu .menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 90;
+    background-color: #1C1C1C;
+  }
+  header .hamburger-menu .menu-btn span, header .hamburger-menu .menu-btn span::before, header .hamburger-menu .menu-btn span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+  header .hamburger-menu .menu-btn span::before {
+    bottom: 8px;
+  }
+  header .hamburger-menu .menu-btn span::after {
+    top: 8px;
+  }
+  header .hamburger-menu #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  header .hamburger-menu #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .hamburger-menu #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .hamburger-menu .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #1C1C1C;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    display: block;
+  }
+  header .hamburger-menu .menu-content ul {
+    display: block;
+    padding: 70px 10px 0;
+  }
+  header .hamburger-menu .menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+  }
+  header .hamburger-menu .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 4rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    line-height: 60px;
+    margin-top: 10px;
+  }
+  header .hamburger-menu .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 22px;
+  }
+  div.kv {
+    margin-bottom: 30px;
+  }
+  div.kv div.kv-img {
+    margin-bottom: 20px;
+  }
+  div.kv div.kv-img div.kv-title {
+    margin-top: 20px;
+    font-size: 4rem;
+    font-family: 'SAO UI';
+    text-align: center;
+    padding: 0 20px;
+  }
+  div.kv p {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+  div.kv p ruby rt {
+    color: #BC070E;
+    font-weight: bold;
+  }
+  div.kv p.kv-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+  }
+  main div.section-title {
+    display: block;
+    width: 250px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main div.section-title h2 {
+    font-family: 'SAO UI';
+    line-height: 100px;
+    text-align: center;
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #BC070E;
+    position: relative;
+  }
+  main div.section-title span.plus {
+    position: absolute;
+  }
+  main div.section-title span.plus::before, main div.section-title span.plus::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color: #707070;
+  }
+  main div.section-title span.plus::after {
+    top: 0px;
+    right: -25px;
+  }
+  main div.section-title span.plus::before {
+    top: 0px;
+    right: -25px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  main div.section-title span.plus:nth-child(3)::after {
+    top: -50px;
+    left: 225px;
+  }
+  main div.section-title span.plus:nth-child(3)::before {
+    top: -50px;
+    left: 225px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  main section.service {
+    margin-bottom: 30px;
+  }
+  main section.service ul li div {
+    padding: 20px;
+    background-color: #EBEBEB;
+  }
+  main section.service ul li div h3 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  main section.service ul li div h3::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -14px;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+  main section.service ul li div p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  main section.service ul li div p strong {
+    font-weight: bold;
+    color: #BC0707;
+  }
+  main section.service ul li div p.price {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  main section.service ul li:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main section.service ul li:nth-child(2) div {
+    background-color: #CBCBCB;
+  }
+  main section.about {
+    margin-bottom: 30px;
+  }
+  main section.about ul li div {
+    padding: 20px;
+    background-color: #EBEBEB;
+  }
+  main section.about ul li div h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  main section.about ul li div h3::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -14px;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+  main section.about ul li div img {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 20px;
+  }
+  main section.about ul li div p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  main section.about ul li div p strong {
+    font-weight: bold;
+    color: #BC0707;
+  }
+  main section.news {
+    margin-bottom: 30px;
+  }
+  main section.news ul {
+    width: 100%;
+    padding: 0 20px;
+  }
+  main section.news ul li {
+    margin-bottom: 20px;
+  }
+  main section.news ul li div {
+    background-color: #EBEBEB;
+    padding: 26px 20px 22px;
+  }
+  main section.news ul li div h3 {
+    margin-bottom: 20px;
+  }
+  main section.news ul li div h3 a {
+    line-height: 1.5;
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+  main section.news ul li div p {
+    text-align: right;
+  }
+  main section.news ul li div p time::after {
+    content: " / ";
+  }
+  main section.news ul li div p .cat {
+    display: inline;
+  }
+  main section.news a.news-btn {
+    line-height: 30px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 20px 20px 0;
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #BC0707;
+    color: #fff;
+    text-align: center;
+  }
+  main section.contact {
+    background-color: #EBEBEB;
+    padding: 30px 0 30px;
+    width: 100%;
+  }
+  main section.contact form {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  main section.contact form dl {
+    padding: 0 20px;
+  }
+  main section.contact form dl dt {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  main section.contact form dl dt:nth-child(9) {
+    line-height: 1;
+  }
+  main section.contact form dl dd {
+    display: block;
+    margin-bottom: 20px;
+  }
+  main section.contact form dl dd input.form-text {
+    background-color: #fff;
+    height: 50px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  main section.contact form dl dd textarea.form-textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  main section.contact form input.contact-submit {
+    line-height: 30px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 20px 20px 0;
+    display: inline-block;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #BC0707;
+    color: #fff;
+    text-align: center;
+  }
+  footer {
+    background-color: #1C1C1C;
+    height: 30px;
+  }
+  footer p {
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=smart.css.map */
